@@ -1,11 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xml:lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Essentials</title>
-    <link href="http://www.imageessentials.com/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="shortcut icon" href="http://www.imageessentials.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alex+Brush|Playfair+Display+SC" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
@@ -17,8 +16,8 @@
 <body>
 
   <!--HEADER-->
-  <?php include('header.php'); ?>
-              
+  <?php include("header.php"); ?>
+
   <!--SLIDER ROW-->
   <div class="row">
     <div class="medium-12">
@@ -90,9 +89,9 @@
             </li>
           </ul>
         </div>
-        
+
         <a class="slider-control left" href="#a" data-jump="prev" title="Previous"></a> <a class="slider-control right" href="#a" data-jump="next" title="Next"></a>
-  
+
         <div class="pages hide-for-small">
           <a class="page" href="#" data-jump-to="1">1</a>
           <a class="page" href="#" data-jump-to="2">2</a>
@@ -105,22 +104,22 @@
         </div>
         <div id="hide_captions" class="hide-for-small" style="position:absolute;bottom:0;right:0;">
           <a id="photoOnly" title="Hide Captions"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x BrowmMd"></i><i class="fa fa-camera fa-stack-1x fa-inverse"></i></span></a>
-        </div>  
+        </div>
       </div>
     </div>
   </div>
   <!--END SLIDER ROW-->
-  
+
   <div class="row">
     <div class="medium-12 columns MakeupClr4 pad-sm">
       <img src="img/transparent.gif" />
     </div>
   </div>
-            
+
   <!--CONTENT ROW-->
   <div class="row">
     <div class="medium-12 columns MakeupClr4">
-      
+
       <div class="row" data-equalizer>
         <div class="medium-4 columns">
           <div class="panel radius">
@@ -147,23 +146,23 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
   <!--END CONTENT-->
-  
+
   <!--FOOTER-->
   <?php include('footer.php'); ?>
-       
+
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/responsive-slider.js"></script>
   <script>
   //Initialize Foundation
   jQuery(document).foundation();
-  
+
   //Initialize Slider
-  jQuery(document).ready( function(){		
+  jQuery(document).ready( function(){
       $('.responsive-slider').responsiveSlider({
           autoplay: true,
           interval: 8000,
@@ -173,11 +172,11 @@
               if($('a#btnShow').hasClass('dn')){
                   $('a#btnShow').text('Show');
                   $('a#btnShow').removeClass('dn');
-                  } 
+                  }
               }
           });
       });
-      
+
   //Custom Functions
   jQuery(document).ready(function(){
       //toggle Captions
@@ -189,11 +188,9 @@
           } else {
               $(this).attr('title','Hide Captions');
           }
-      });		
-  });	
+      });
+  });
   </script>
-    
+
   </body>
 </html>
-       
-    

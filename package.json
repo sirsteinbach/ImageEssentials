@@ -6,5 +6,19 @@
     "type": "git",
     "url": "https://github.com/sirsteinbach/ImageEssentials.git"
   },
-  "author": "Stephen Steinbach"
+  "author": "Stephen Steinbach",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-css-purge": "^3.0.3",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "gulp-util": "^3.0.8"
+  }
 }
