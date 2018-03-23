@@ -1,0 +1,10 @@
+{
+  "name": "imageessentials",
+  "version": "1.0.0",
+  "description": "2018 Overhaul",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sirsteinbach/ImageEssentials.git"
+  },
+  "author": "Stephen Steinbach"
+}

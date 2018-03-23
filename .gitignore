@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+cgi-bin
+_notes
+_source
+.jpg
+.jpeg
+.gif
+.png

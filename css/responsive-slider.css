@@ -1,0 +1,181 @@
+/*--------------------------------------/
+           GLOBAL CLASSES
+/--------------------------------------*/
+
+.responsive-slider {width:100%;position:relative;}
+.responsive-slider .touch-surface {position:absolute;top:0;left:0;width:100%;height:100%;}
+.responsive-slider .slides {position:relative;overflow:hidden;}
+.responsive-slider .slides ul {list-style-type:none;padding:0;margin:0;white-space:nowrap;font-size:0;}
+.responsive-slider .slides ul li {display:inline-block;max-width:100%;}
+.responsive-slider .slides ul li .slide-body {display:inline-block;position:relative;max-width:100%;font-size:14px;}
+/* Generalized for all captions */
+.responsive-slider .slides ul li .slide-body img {max-width:100%;}
+.responsive-slider .slides ul li .slide-body .caption {position:absolute;color:#fff;}
+.responsive-slider .slides ul li .slide-body {display:inline-block;position:relative;max-width:100%;font-size:14px;}
+/* show||hide all captions */
+.show {visibility:visible;}
+.hide {visibility:hidden;}
+
+/*--------------------------------------/
+          Pagination (S)
+----------------------------------------*/
+.responsive-slider .pages {position:absolute;bottom:-10px;right:0;width:50%;text-align:right;margin:0px 6%;}
+.responsive-slider .pages .page {
+	display: inline-block;
+	color: transparent;
+	width:16px;
+	height:16px;
+	border:8px solid #D28C94;
+	border-radius:50%;
+	opacity:.7;
+}
+.responsive-slider .pages .page.active {
+	border-color:#7B6F67;
+	opacity:1;
+}
+.responsive-slider .pages .page:hover {
+	border-color:#A5AF7F;
+	opacity:1;
+}
+.responsive-slider span.fa-stack {font-size:.7em; margin:0 5px 3px;}
+
+/* Slide Navigation L & R */
+.responsive-slider .slider-control {
+	position: absolute;
+	font-size: 20px;
+	top: 0;
+	height:95%;
+	background-color: transparent;
+	padding: 0 100px;
+} 
+.responsive-slider .slider-control.left {
+	left: 0;
+	padding-left: 0;
+	-webkit-border-radius: 0px 6px 6px 0px;
+	border-radius: 0px 6px 6px 0px;
+}
+.responsive-slider .slider-control.left:hover {
+	text-decoration: none;
+	padding-left: 10px;
+}
+.responsive-slider .slider-control.right {
+	right: 0;
+	padding-right: 0;
+	-webkit-border-radius: 6px 0px 0px 6px;
+	border-radius: 6px 0px 0px 6px;
+}
+.responsive-slider .slider-control.right:hover {
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+/*--------------------------------------/
+    Slide #1 (S)
+    The Ultimate Bridal Makeover
+/--------------------------------------*/
+/*(The)*/
+.responsive-slider .slides ul li .slide-body .caption.s1_p1 {top:33%;left:14%;font-size:2em;font-weight:200;color:#575748;}
+/*(Ultimate)*/
+.responsive-slider .slides ul li .slide-body .caption.s1_p2 {top:37%;left:8%;font-size:3em;font-family:'Playfair Display SC',serif;color:#DC94A5;text-shadow: 0px 0px 10px #FFF;}
+/*(Bridal)*/
+.responsive-slider .slides ul li .slide-body .caption.s1_p3 {top:39%;left:11%;font-size:5.5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 1px 3px 5px #222;}
+/*(Makeover)*/
+.responsive-slider .slides ul li .slide-body .caption.s1_p4 {top:59%;left:15%;font-size:2em;font-weight:200;color:#575748;}
+/*--------------------------------------/
+    Slide #2 (S)
+    With A Flair for the Dramatic
+/--------------------------------------*/
+/*(With)*/
+.responsive-slider .slides ul li .slide-body .caption.s2_p1 {top:25%;right:25%;font-size:2em;font-weight:200;color:#888;}
+/*(A)*/
+.responsive-slider .slides ul li .slide-body .caption.s2_p2 {top:29%;right:24%;font-size:3em;font-family:'Alex Brush',cursive;color:#777;}
+/*(Flair)*/
+.responsive-slider .slides ul li .slide-body .caption.s2_p3 {top:35%;right:19%;font-size:3.5em;font-family:'Playfair Display SC',serif;color:#DC94A5;text-shadow: 0px 0px 5px #FFF;}
+/*(for the)*/
+.responsive-slider .slides ul li .slide-body .caption.s2_p4 {top:50%;right:22%;font-size:1.5em;font-family:'Playfair Display SC',serif;color:#888;}
+/*(Dramatic)*/
+.responsive-slider .slides ul li .slide-body .caption.s2_p5 {top:48%;right:15%;font-size:4.5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 1px 3px 5px #222;}
+/*--------------------------------------/
+    Slide #3 (S)
+    Or Light & Natural
+/--------------------------------------*/
+/*(Or)*/
+.responsive-slider .slides ul li .slide-body .caption.s3_p1 {top:40%;left:6%;font-size:1.5em;font-weight:200;color:#634D38;}
+/*(Light)*/
+.responsive-slider .slides ul li .slide-body .caption.s3_p2 {top:35%;left:8%;font-size:5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 2px 3px 5px #222;}
+/*(&)*/
+.responsive-slider .slides ul li .slide-body .caption.s3_p3 {top:38%;left:23%;font-size:5em;font-family:'Alex Brush',cursive;color:#C28741;text-shadow: 0px 0px 5px #FFF;}
+/*(Natural)*/
+.responsive-slider .slides ul li .slide-body .caption.s3_p4 {top:50%;left:15%;font-size:5em;font-family:'Alex Brush',cursive;color:#634D38;}
+/*--------------------------------------/
+    Slide #4 (S)
+    Look Your Absolute Best
+/--------------------------------------*/
+/*(Look)*/
+.responsive-slider .slides ul li .slide-body .caption.s4_p1 {top:30%;right:20%;font-size:2em;font-weight:200;color:#634D38;}
+/*(Your)*/
+.responsive-slider .slides ul li .slide-body .caption.s4_p2 {top:35%;right:17%;font-size:2em;font-family:'Playfair Display SC',serif;color:#C28741;text-shadow: 0px 0px 5px #FFF;}
+/*(Absolute)*/
+.responsive-slider .slides ul li .slide-body .caption.s4_p4 {top:38%;right:11%;font-size:5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 2px 4px 10px #000;}
+/*(Best)*/
+.responsive-slider .slides ul li .slide-body .caption.s4_p3 {top:49%;right:13%;font-size:5em;font-family:'Alex Brush',cursive;color:#634D38;}
+/*--------------------------------------/
+    Slide #5 (S)
+    Flawless Airbrush Makeup
+/--------------------------------------*/
+/*(Flawless)*/
+.responsive-slider .slides ul li .slide-body .caption.s5_p1 {top:45%;left:17%;font-weight:200;font-size:2em;color:#C28741;}
+/*(Airbrush)*/
+.responsive-slider .slides ul li .slide-body .caption.s5_p3 {top:45%;left:10%;font-size:4em;font-family:'Playfair Display SC',serif;color:#FFF;text-shadow: 1px 4px 10px #333;}
+/*(Makeup)*/
+.responsive-slider .slides ul li .slide-body .caption.s5_p2 {top:55%;left:22%;font-size:4em;font-family:'Alex Brush',cursive;color:#775144}
+/*--------------------------------------/
+    Slide #6 (S)
+    Idividual Eyelash Application
+/--------------------------------------*/
+/*(Individual)*/
+.responsive-slider .slides ul li .slide-body .caption.s6_p1 {top:35%;right:17%;font-weight:200;font-size:2em;color:#600;}
+/*(Eyelash)*/
+.responsive-slider .slides ul li .slide-body .caption.s6_p3 {top:35%;right:10%;font-size:4em;font-family:'Playfair Display SC',serif;color:#FFF;text-shadow: 1px 4px 10px #333;}
+/*(Application)*/
+.responsive-slider .slides ul li .slide-body .caption.s6_p2 {top:45%;right:8%;font-size:4em;font-family:'Alex Brush',cursive;color:#600}
+/*--------------------------------------/
+    Slide #7 (S)
+    Exquisite Bridal Hair Design
+/--------------------------------------*/
+/*(Exquisite)*/
+.responsive-slider .slides ul li .slide-body .caption.s7_p1 {top:35%;left:21%;font-size:2em;color:#FFF;font-weight:200;}
+/*(Bridal)*/
+.responsive-slider .slides ul li .slide-body .caption.s7_p4 {top:35%;left:14%;font-size:5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 1px 4px 5px #333;}
+/*(Hair)*/
+.responsive-slider .slides ul li .slide-body .caption.s7_p3 {top:45%;left:24%;font-size:4em;font-family:'Playfair Display SC',serif;color:#600;text-shadow: 1px 1px 8px #FFF;}
+/*(Design)*/
+.responsive-slider .slides ul li .slide-body .caption.s7_p2 {top:57%;left:20%;font-size:2.5em;font-family:'Playfair Display SC',serif;color:#FFF;text-shadow: 1px 4px 5px #333;}
+/*--------------------------------------/
+    Slide #8 (S)
+    Leave A Lasting Impression
+/--------------------------------------*/
+/*(Leave)*/
+.responsive-slider .slides ul li .slide-body .caption.s8_p1 {top:30%;right:33%;font-size:3em;font-family:'Playfair Display SC',serif;color:#222;text-shadow: 2px 2px 8px #FFF;}
+/*(A)*/
+.responsive-slider .slides ul li .slide-body .caption.s8_p2 {top:42%;right:40%;font-size:2em;font-family:'Alex Brush',cursive;color:#CCC;}
+/*(Lasting)*/
+.responsive-slider .slides ul li .slide-body .caption.s8_p4 {top:35%;right:20%;font-size:5em;font-family:'Alex Brush',cursive;color:#FFF;text-shadow: 2px 4px 10px #000;}
+/*(Impression)*/
+.responsive-slider .slides ul li .slide-body .caption.s8_p3 {top:50%;right:13%;font-size:2.5em;font-family:'Playfair Display SC',serif;color:#C10000;text-shadow: 1px 1px 1px #333;}
+
+/*--------------------------------------/
+    
+               MEDIUM
+
+/--------------------------------------*/
+
+@media (min-width: 929px) and (max-width: 1120px) { 
+
+}
+
+/*--------------------------------------/
+    
+               LARGE
+
+/--------------------------------------*/
