@@ -1,0 +1,151 @@
+/*
+Breakpoint: 48em (768px)
+Maxwidth: 60em (960px)
+*/
+
+@import "http://fonts.googleapis.com/css?family=Alex+Brush|Playfair+Display+SC";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {background:#333;}
+.pad-sm {line-height:.5em;}
+.pad-md {line-height:1em;}
+.pad-lg {line-height:2em;}
+
+@media only screen and (min-width: 40.063em){
+  body{
+    background: url(../../_img/universal/wallpaper.gif) repeat #7B6F67;
+  }
+}
+
+.maxWidth {
+   width: 60em;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+.rounded img {border-radius:4px;}
+.totalRound img {border-radius:60em;}
+
+/* ------- TOPBAR -------- */
+.top-bar {
+  background: #222;
+}
+.top-bar.expanded .title-area {
+  background: #222;
+}
+.top-bar-section ul li > a {
+  color: #FFFFFF;
+  font:bold normal 12px/100% "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+	  height:70px;
+    background: #222;
+  }
+  .top-bar-section ul li {background:#222;}
+  .top-bar .name span a {width:100%;}
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+	border:none;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button) {
+	padding:0 1em;
+	line-height:25px;
+	background:#222;
+	border-top:22px solid #222;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+	  padding:0 1em;
+	  background:#7B6F67;
+  }
+  .top-bar-section ul {
+	margin: 0 5% 0 0;
+  }
+  .top-bar .title-area {
+	position: relative;
+	margin:10px 1em;
+  }
+}
+
+/* ------- JQUERY DATEPICKER -------- */
+#ui-datepicker-div {z-index:9999999 !important;}
+.ui-datepicker {font-size:.75em;}
+@media only screen and (min-width: 40.063em) {.ui-datepicker {font-size:1em;}}
+
+/* ------- FONTS -------- */
+small {
+  color:#7B6F67;
+  font-size: 12px;
+}
+p {font-size:14px;}
+li {font-size:14px;}
+h5 {text-transform:uppercase;font:bold small-caps normal 14px/100% Arial, Helvetica, sans-serif;}
+
+.fa-stack-head {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+.side-pad {
+	background-color:#444;
+	padding:0 10px;
+}
+
+/* ------- PANELS -------- */
+.panel-head {
+	padding:.5em;
+	margin:-1em -1em .75em;
+	border-radius:3px;position:relative;
+	top:-1em;
+}
+.panel-head span {font-size:1em;}
+
+/* ------- BUTTONS -------- */
+button, .button {
+  background-color:#6A5F58;
+  border:1px solid #555;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #7B6F67;
+}
+
+/* ------- FORMS -------- */
+textarea {min-height:0px;}
+span.prefix.rRound {
+  background:#6A5F58;
+  border-right: none;
+  color:#FFF;
+  border-color: #cccccc;
+  border-radius: 5em 0 0 5em;}
+
+/* ------- BG COLORING -------- */
+.GrayLt {background-color:#C9D1E4;}
+.GrayLtEx {background-color:#E9F7F7;}
+.drk222 {background-color:#222;}
+.drk333 {background-color:#333;}
+.drk444 {background-color:#444;}
+.MakeupClr1 {background-color:#FF7373;}
+.MakeupClr2 {background-color:#7B6F67;}
+.MakeupClr3 {background-color:#6A5F58;}
+.MakeupClr4 {background-color:#3C3531;}
+
+.bgPinkLt {background-color:#DDC1BD;}
+.bgPinkMd {background-color:#D6ACB5;}
+.bgPinkDk {background-color:#D28C94;}
+
+/* ------- FONT COLORING -------- */
+.White {color:#FFFFFF;}
+.PinkLt {color:#DDC1BD;}
+.PinkMd {color:#D6ACB5;}
+.PinkDk {color:#D28C94;}
+.GreenLt {color:#A5AF7F;}
+.GreenDk {color:#678440;}
+.BlueLt {color:#5B929E;}
+.BlueDk {color:#486670;}
+.BrownLt {color:#7B6F67;}
+.BrowmMd {color:#6A5F58;}
+.BrownDk {color:#3C3531;}

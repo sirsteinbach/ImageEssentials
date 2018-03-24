@@ -11,29 +11,42 @@ var gulp = require('gulp'),
     replace = require('gulp-replace'),
     htmlmin = require('gulp-htmlmin');
 
-var css_Zurb = ['_DEV/_css/_components/*.css'],
-    js_Zurb = ['_DEV/_js/F6/_components/*.js'],
+var css_Zurb = ['_DEV/_css/f5_parts/*.css'],
+    css_Extra = ['_DEV/_css/f5_extra/*.css'],
+    js_Zurb = ['_DEV/_js/f5_parts/*.js'],
+    js_Extra = ['_DEV/_js/f5_extra/*.js'],
     images = ['_DEV/_img/**/*.{jpg,png,gif,svg,ico}'],
     phpSources = ['_DEV/**/*.php'];
 
 gulp.task('css',function(){
   gulp.src(css_Zurb)
   .pipe(sass())
-  .pipe(concatCSS('Zurbed.css'))
-  .pipe(gulp.dest('_DEV/_css/F5'))
+  .pipe(concatCSS('zurbed.css'))
+  .pipe(gulp.dest('_DEV/_css/f5'))
   .pipe(purgeCSS({trim:true,shorten:true,verbose:true}))
   .pipe(uglifyCSS())
   .pipe(rename({suffix:'.min'}))
-  .pipe(gulp.dest('_PRO/_css'))
+  .pipe(gulp.dest('_PRO/_css/f5'))
+  gulp.src(css_Extra)
+  .pipe(gulp.dest('_DEV/_css/f5'))
+  .pipe(purgeCSS({trim:true,shorten:true,verbose:true}))
+  .pipe(uglifyCSS())
+  .pipe(rename({suffix:'.min'}))
+  .pipe(gulp.dest('_PRO/_css/f5'))
 });
 
 gulp.task('js',function(){
   gulp.src(js_Zurb)
-  .pipe(concat('Zurbed.js'))
-  .pipe(gulp.dest('_DEV/_js/F5'))
+  .pipe(concat('zurbed.js'))
+  .pipe(gulp.dest('_DEV/_js/f5'))
   .pipe(uglifyJS())
   .pipe(rename({suffix:'.min'}))
-  .pipe(gulp.dest('_PRO/_js/F5'))
+  .pipe(gulp.dest('_PRO/_js/f5'))
+  gulp.src(js_Extra)
+  .pipe(gulp.dest('_DEV/_js/f5'))
+  .pipe(uglifyJS())
+  .pipe(rename({suffix:'.min'}))
+  .pipe(gulp.dest('_PRO/_js/f5'))
 });
 
 gulp.task('php', function(){
@@ -44,7 +57,7 @@ gulp.task('php', function(){
   //Restore original Jquery.min(-.min)
   .pipe(replace('.min.min', '.min'))
   //Restore original Google Analytics(-.min)
-  //.pipe(replace('analytics.min.js','analytics.js'))
+    //.pipe(replace('analytics.min.js','analytics.js'))
   .pipe(gulp.dest('_PRO/'))
 });
 
@@ -64,4 +77,4 @@ gulp.task('watch',function(){
   gulp.watch(phpSources,['php']);
 });
 
-gulp.task('default',['php','js','css','img','connect','watch']);\
+gulp.task('default',['php','js','css','img','connect','watch']);

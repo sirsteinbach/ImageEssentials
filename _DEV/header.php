@@ -1,17 +1,15 @@
   <div class="row hidden-for-medium-down">
     <div class="medium-12 columns pad-lg">
-      <img src="img/transparent.gif" />
+      &nbsp;
     </div>
   </div>
   
-  <div class="row">
+  <header class="row">
     <div class="medium-12">
     
       <nav class="top-bar" data-topbar>
         <ul class="title-area">           
-          <li class="name">
-          	<a href="index.php"><img src="img/Logo1.png"></a>
-          </li>
+          <li class="name"><a href="index.php"><img src="_img/universal/logo.png"></a></li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
         </ul>
       
@@ -30,4 +28,4 @@
       </nav>
     
     </div>
-  </div>
+  </header>
